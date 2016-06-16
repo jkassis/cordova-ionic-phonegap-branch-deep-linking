@@ -6,6 +6,7 @@
 //
 
 #import "BranchSDK.h"
+#import "FBSDKAppLinkUtility.h"
 
 @interface BranchSDK()
 
