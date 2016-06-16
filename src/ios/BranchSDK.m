@@ -76,6 +76,8 @@
 - (void)initSession:(CDVInvokedUrlCommand*)command
 {
     Branch *branch = [self getInstance];
+    
+    [branch registerFacebookDeepLinkingClass:[FBSDKAppLinkUtility class]];
 
     [branch initSessionWithLaunchOptions:nil andRegisterDeepLinkHandler:^(NSDictionary *params, NSError *error) {
 
